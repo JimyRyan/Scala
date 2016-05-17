@@ -1,3 +1,7 @@
+# Release date #
+
+Monday 2nd May 2016
+
 # Problem #
 
 Let's consider a second-price, sealed-bid auction:
