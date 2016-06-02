@@ -1,5 +1,5 @@
 def faltToField(df: DataFrame) {
-    val func = (row: Row) => List[Row] = {
+    def func2(row: Row) : List[Row] = {
         List(row, row, row)
     }
 
@@ -7,7 +7,7 @@ def faltToField(df: DataFrame) {
     // OR 
     //
     
-    def func2(row: Row) : List[Row] = {
+    val func = (row: Row) => {
         List(row, row, row)
     }
 }
