@@ -1,3 +1,5 @@
+http://alvinalexander.com/scala/fpbook/explaining-scala-val-function-syntax-functional-programming
+
 The following lines show the implicit and explicit syntax for a function named add1, which returns an Int value that is 1 larger than the Int value it is given as an input parameter:
 
 val add1 = (i: Int) => i + 1           // implicit return type (IRT)
