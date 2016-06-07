@@ -49,3 +49,9 @@ All of those examples show a function that takes one input parameter. The next e
 
 val sum = (a: Int, b: Int) => a + b            // implicit
 val sum: (Int, Int) => Int = (a, b) => a + b   // explicit
+
+
+
+
+
+http://like-a-boss.net/2012/07/30/ordering-and-ordered-in-scala.html
