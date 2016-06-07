@@ -1,5 +1,33 @@
 http://alvinalexander.com/scala/fpbook/explaining-scala-val-function-syntax-functional-programming
 
+I show these examples because I want to list the many ways you can write isEven using an implicit return type:
+val isEven = (i: Int) => { if (i % 2 == 0) true else false }
+val isEven = (i: Int) => if (i % 2 == 0) true else false
+ 
+val isEven = (i: Int) => { i % 2 == 0 }
+val isEven = (i: Int) => i % 2 == 0
+val isEven = i: Int => i % 2 == 0
+
+The next examples show different ways you can write isEven when declaring an explicit return type:
+val isEven: (Int) => Int = (i) => { if (i % 2 == 0) true else false }
+val isEven: (Int) => Int = i   => { if (i % 2 == 0) true else false }
+ 
+val isEven: (Int) => Int = (i) => { i % 2 == 0 }
+val isEven: (Int) => Int = i   => { i % 2 == 0 }
+ 
+val isEven: (Int) => Int = (i) => i % 2 == 0
+val isEven: (Int) => Int = i   => i % 2 == 0
+ 
+val isEven: (Int) => Int = (i) => {
+    if (i % 2 == 0) {
+        true
+    } else {
+        false
+    }
+}
+
+
+
 The following lines show the implicit and explicit syntax for a function named add1, which returns an Int value that is 1 larger than the Int value it is given as an input parameter:
 
 val add1 = (i: Int) => i + 1           // implicit return type (IRT)
