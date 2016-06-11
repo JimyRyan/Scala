@@ -1,5 +1,6 @@
 # Formating
-1. printf
+
+1. Printf
 
 Only display the result
 
@@ -7,7 +8,7 @@ Only display the result
 printf("%d.%d.%d %d:%d:%d", year, month, day, hour, minute, second)
 ```
 
-2. format
+2. Format
 
 Output and/or store the result into a variable
 
